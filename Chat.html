@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link href="css/mian.css" rel="stylesheet"/>
+	<body>
+
+		<div class="main" id="mianym">
+			<div class="main_top">
+				<input type="text" placeholder="搜索" id="shousuo"/>
+				<b id="tjhaoyou">+</b>
+				
+				<div class="tianjiahaoyou">
+					<input type="text" id="addnum" placeholder="请输入用户名"/>
+					<input type="text" id="addmsm" value="很想认识你"/>
+					<button id="tjqx" class="graybtn">取消</button>
+					<button id="addFriends">添加</button>
+				</div>
+				<div class="haoyouqingqiu">
+					<h3 id="addfrom"></h3>
+					<p id="addstatus"></p>
+					<button id="unagreeadd" class="graybtn">拒绝</button>
+					<button id="agreeadd">同意</button>
+				</div>
+				
+				
+				<h2>企鹅大侠</h2>
+				<div class="topr">
+					<a>一</a>
+					<a>口</a>
+					<a>❌</a>
+				</div>
+			</div>
+			<div class="main_left">
+				
+				<ul>
+					<!-- <li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+						
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li>
+					<li>
+						<div class="hreatimg"></div>
+						<div class="mlname">
+							<h3>小陈</h3>
+							<p>小陈牛逼，奥力给</p>
+						</div>
+					</li> -->
+
+				</ul>
+			</div>
+			
+			<div class="main_right">
+				<div class="main_right1">
+					<ul id="chatbox">
+<!-- 						<li class="leftchat">
+							<i></i>
+							<b></b>
+							<div></div>
+						</li>
+						
+						<li class="rightchat clearfix">
+							<i></i>
+							<div></div>
+							<b></b>
+						</li>
+						<li class="rightchat clearfix">
+							<i></i>
+							<div></div>
+							<b></b>
+						</li>
+						<li class="leftchat">
+							<i></i>
+							<b></b>
+							<div></div>
+						</li> -->
+						
+					</ul>
+					
+					
+				</div>
+				
+				<div id="input-content" class="main_right2" contenteditable="true"></div>
+				
+					<div class="buttongf">
+						<button class="guangbi">关闭(C)</button>
+						<button class="fasong" id="fasong">发送(S) ></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="denglu" id="dengluym">
+			<div class="top">
+				<h2>&nbsp;&nbsp;QQ</h2>
+				<div class="topr">
+					<a></a>
+					<a></a>
+					<a>X</a>
+				</div>
+				
+			</div>
+			<div class="hreatimg"></div>
+			<input type="text" class="zhanghao"/>
+			<input type="password" class="passwd" />
+			<button class="btdenglu" id="btdenglu">登录</button>
+			<a id="qhzhuce">立即注册</a>
+		</div>
+			
+			
+			
+		
+		<div class="bigbox" id="zhuceym">
+			<form>
+				<h1>欢迎注册QQ</h1>
+				<h3>每一天，乐在沟通</h3> <a class="mianfei">免费靓号</a>
+				<br />
+				<input type="text" placeholder="账号" class="username" id="username"/>
+				<input type="text" placeholder="昵称" class="nickname" id="nickname"/>
+				<input type="text" placeholder="密码" class="mima" id="mima"/>
+				<input type="button" value="立即注册" class="lijizc" id="qlijizc"/>
+				<input type="checkbox" />
+				<p>我已阅读并同意相关服务条款和隐私政策</p><a id="qhdenglu" href="#">已有账号登录</a>
+			</form>
+		</div>
+		
+		
+		
+		<!-- webim配置文件 -->
+		<script src="js/webim.config.js"></script>
+			
+		<!-- 连接XMPP服务器 -->
+		<script src="js/strophe-1.2.8.min.js"></script>
+			
+		<!-- 实时聊天主文件 -->
+		<script src="js/websdk-1.4.12.js"></script>
+		
+		<script src="./js/index.js"></script>
+	</body>
+</html>

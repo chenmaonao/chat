@@ -1,0 +1,497 @@
+/* 主界面 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}
+.main {
+	display: none;
+	width: 800px;
+	height: 580px;
+	border: #000000 1px solid;
+	margin: 20px auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.main .main_top {
+	height: 50px;
+	background-color: #29BFFD;
+	position: relative;
+
+}
+
+.main .main_top #shousuo {
+	height: 30px;
+	width: 180px;
+	background-color: RGBA(106, 111, 115, .5);
+	border: none;
+	border-radius: 6px;
+	color: white;
+	margin-top: 8px;
+	margin-left: 20px;
+	float: left;
+}
+
+.main .main_top b {
+	height: 30px;
+	width: 30px;
+	background-color: RGBA(106, 111, 115, .5);
+	border: none;
+	border-radius: 6px;
+	color: white;
+	margin-top: 8px;
+	margin-left: 10px;
+	float: left;
+	font-size: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.main .main_top #shousuo::-webkit-input-placeholder {
+	padding-left: 30px;
+	color: white;
+}
+
+.main .main_top h2 {
+	display: inline-block;
+	margin: 10px 0px 0px 180px;
+	color: white;
+	font-weight: 400;
+}
+
+.main .main_top .topr {
+	float: right;
+}
+
+.main .main_top .topr a {
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	display: inline-block;
+	width: 40px;
+	height: 50px;
+	color: white;
+}
+
+.main .main_left {
+	width: 220px;
+	height: 530px;
+	border-right: 1px solid darkgray;
+	float: left;
+	overflow: auto;
+	
+}
+.main_left::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 2px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.main_left::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 1px;
+  background: rgba(0,0,0,0.4);
+}
+.main_left::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.main .main_left ul li {
+	height: 70px;
+	width: 100%;
+	list-style: none;
+	position: relative;
+
+}
+.redspot{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 12px;
+	height: 12px;
+	border-radius: 8px;
+	background-color: red;
+	display: none;
+	
+}
+
+.main .main_left ul li div {
+	margin-top: 10px;
+	float: left;
+}
+
+.main .main_left ul li .hreatimg {
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-image: url(../img/yaoyao.jpg);
+	background-size: 58px;
+	background-position: -4px 0px;
+	margin: 10px;
+}
+
+.main .main_left ul li .mlname h3 {
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.main .main_left ul li .mlname p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #99999A;
+}
+
+.main .main_right {
+	float: left;
+	position: relative;
+	display: none;
+}
+
+.main .main_right .main_right1 {
+	width: 579px;
+	height: 360px;
+	border-bottom: 1px solid #99999A;
+	overflow: auto;
+}
+.main_right1::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 3px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.main_right1::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 2px;
+  background: rgba(0,0,0,0.4);
+}
+.main_right1::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+
+.main .main_right .main_right2 {
+	width: 579px;
+	height: 170px;
+	position: relative;
+
+}
+.main .main_right .leftchat i{
+	position: absolute;
+	margin: 10px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: url(../img/yaoyao.jpg);
+	background-size: 50px;
+}
+
+.main .main_right .leftchat div{
+	padding: 6px;
+	border-radius: 4px;
+	/* height: 300px; */
+	background-color: #3588FF;
+	display: inline-block;
+	max-width: 300px;
+	word-wrap:break-word; 
+	margin-top: 26px;
+	margin-left: 80px;
+		min-height: 20px;
+	min-width: 15px;
+}
+.main .main_right .leftchat{
+	position: relative;
+}
+.main .main_right .leftchat b{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid #3588FF;
+	border-top: 6px solid #3588FF;
+	border-bottom: 6px solid transparent;
+	position: absolute;
+	top: 30px;
+	left: 70px;
+}
+
+.main .main_right .rightchat i{
+	position: absolute;
+	margin: 10px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: url(../img/yaoyao.jpg);
+	background-size: 50px;
+	right: 0px;
+}
+
+.main .main_right .rightchat div{
+	float: right;
+	padding: 6px;
+	border-radius: 4px;
+	/* height: 300px; */
+	background-color:  #9EEA6A;
+	display: inline-block;
+	max-width: 300px;
+	min-height: 20px;
+	min-width: 15px;
+	word-wrap:break-word; 
+	margin-top: 26px;
+	margin-right: 80px;
+}
+.main .main_right .rightchat{
+	position: relative;
+	width: 300;
+}
+.main .main_right .rightchat b{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-left: 6px solid #9EEA6A;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #9EEA6A;
+	border-bottom: 6px solid transparent;
+	position: absolute;
+	top: 30px;
+	right: 70px;
+}
+
+.buttongf {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+}
+
+.buttongf .fasong {
+	width: 98px;
+	height: 30px;
+	background-color: #29BFFD;
+	color: white;
+	border: none;
+}
+
+.buttongf .guangbi {
+	width: 80px;
+	height: 30px;
+	border: 1px solid #D3D4DE;
+	background-color: white;
+}
+
+
+
+
+/* 登录 */
+.denglu {
+	width: 430px;
+	height: 330px;
+	margin: 50px auto;
+	position: relative;
+	border: 1px solid RGBA(106, 111, 115, .5);
+	border-radius: 4px;
+	display: block;
+}
+
+.denglu .top {
+	width: 430px;
+	height: 128px;
+	background-color: #189dff;
+}
+
+.denglu .hreatimg {
+	height: 65px;
+	width: 65px;
+	border-radius: 40px;
+	background-image: url(../img/yaoyao.jpg);
+	background-size: 76px;
+	background-position: -4px 0px;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin: -25px 0 0 -35px;
+}
+
+.denglu .zhanghao,
+.denglu .passwd {
+	display: block;
+	height: 30px;
+	width: 240px;
+	margin: 16px auto;
+	font-size: 18px;
+	border-radius: 1px;
+	/* border: none; */
+}
+
+.denglu .zhanghao {
+	margin-top: 40px;
+}
+
+.denglu .btdenglu {
+	display: block;
+	height: 30px;
+	width: 240px;
+	color: white;
+	background-color: #29BFFD;
+	border: none;
+	margin: 0px auto;
+}
+
+.top .topr {
+	float: right;
+}
+
+.top .topr a {
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: white;
+}
+
+.top h2 {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+}
+#qhzhuce{
+	float: right;
+	margin-right: 10px;
+	color: #189DFF;
+}
+
+
+
+
+
+
+/* 注册 */
+.bigbox {
+	width: 480px;
+	margin: 40px auto;
+	display: none;
+}
+
+.mianfei {
+	float: right;
+	display: inline-block;
+	line-height: 60px;
+	color: #35AFFF;
+	font-size: 16px;
+}
+
+.bigbox h3 {
+	display: inline-block;
+	font-size: 26px;
+	font-weight: 200;
+	margin: 10px 0px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.bigbox .nickname,
+.bigbox .mima,
+.bigbox .username {
+	height: 50px;
+	width: 480px;
+	margin: 16px 0px;
+	font-size: 20px;
+	color: #D3D4DE;
+}
+
+.bigbox .lijizc {
+	height: 50px;
+	width: 480px;
+	margin: 16px 0px;
+	color: white;
+	background-color: #3588FF;
+}
+
+.bigbox p {
+	display: inline-block;
+}
+
+#qhdenglu {
+	float: right;
+	color: #189DFF;
+}
+
+
+/* 添加好友框 */
+.tianjiahaoyou{
+	background-color: white;
+	position: absolute;
+	width: 400px;
+	height: 180px;
+	border: 1px solid #12B7F5;
+	text-align: center;
+	top: 60px;
+	left: 180px;
+	display: none;
+}
+.tianjiahaoyou input{
+	width: 340px;
+	display: block;
+	margin:20px 24px 5px 24px;
+	height: 30px;
+	outline: none;
+	font-size: 16px;
+}
+.tianjiahaoyou button{
+	
+	width: 80px;
+	height: 40px;
+	margin: 10px 20px;
+	background-color: #3AA6FB;
+	border: none;
+}
+.tianjiahaoyou .graybtn{
+	background-color: #99999A;
+}
+
+/* 请求框 */
+.haoyouqingqiu{
+	background-color: white;
+	position: absolute;
+	width: 400px;
+	height: 120px;
+	border: 1px solid #12B7F5;
+	text-align: center;
+	top: 60px;
+	padding-top: 30px;
+	left: 180px;
+	display: none;
+}
+
+.haoyouqingqiu button{
+	
+	width: 80px;
+	height: 40px;
+	margin: 10px 20px;
+	background-color: #3AA6FB;
+	border: none;
+}
+.haoyouqingqiu .graybtn{
+	background-color: #99999A;
+}
+
+
+.main_left .active{
+	background-color: azure;
+}
+
